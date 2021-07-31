@@ -1,18 +1,18 @@
-import logo from "./logo.svg";
-import { Button } from "antd";
+import React, { Fragment } from "react";
 import "./assests/sass/style.scss";
 
-function App() {
-  return (
-    <div className="container">
-      <div className="row">
-        <div className="col">
-          <h1>This is a variable example</h1>
-          <Button>Click Here</Button>
-        </div>
-      </div>
-    </div>
-  );
+import { Header } from "./sections/header/";
+import { Hero } from "./sections/hero/";
+
+class App extends React.Component {
+  render() {
+    return (
+      <Fragment>
+        <Header />
+        <Hero />
+      </Fragment>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,24 @@
+.hero {
+  //margin-top: 90px;
+  .carousel {
+    .carousel-item {
+      transition: background-color ease-in-out 0.4s; //Overide boostrap transition
+      background-color: grey; //Slide default color
+      &:nth-child(1) {
+        &.active {
+          background-color: red; // Slide 1 color
+        }
+      }
+      &:nth-child(2) {
+        &.active {
+          background-color: blue; // Slide 2 color
+        }
+      }
+      &:nth-child(3) {
+        &.active {
+          background-color: green; // Slide 3 color
+        }
+      }
+    }
+  }
+}
