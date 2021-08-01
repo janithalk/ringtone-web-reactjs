@@ -11,6 +11,10 @@ nav {
   }
 
   .navbar-brand {
+    padding: 8px;
+    background-color: rgb(theme.$whiteColor, 45%);
+    border-radius: 6px;
+
     img {
       width: 200px;
     }
