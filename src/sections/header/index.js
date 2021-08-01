@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Menu, Dropdown } from "antd";
+import { DropdownCustom } from "../../components/dropdown";
+import { Menu } from "antd";
+
 import "./header.scss";
+import Logo from "../../assests/images/logo.png";
 
 export const Header = () => {
   const [navBackground, setNavBackground] = useState(false);
@@ -21,16 +24,25 @@ export const Header = () => {
     };
   }, []);
 
-  const menu = (
+  /* Languagae Menu List */
+  const LanguageMenu = (
     <Menu>
-      <Menu.Item key="0">
-        <a href="https://www.antgroup.com">1st menu item</a>
-      </Menu.Item>
-      <Menu.Item key="1">
-        <a href="https://www.aliyun.com">2nd menu item</a>
-      </Menu.Item>
+      <Menu.Item key="0">English</Menu.Item>
       <Menu.Divider />
-      <Menu.Item key="3">3rd menu item</Menu.Item>
+      <Menu.Item key="1">Tamil</Menu.Item>
+      <Menu.Divider />
+      <Menu.Item key="3">Sinhala</Menu.Item>
+    </Menu>
+  );
+
+  /* Languagae Menu List */
+  const UserMenu = (
+    <Menu>
+      <Menu.Item key="0">My Tunes</Menu.Item>
+      <Menu.Divider />
+      <Menu.Item key="1">Profile Settings</Menu.Item>
+      <Menu.Divider />
+      <Menu.Item key="3">Logout</Menu.Item>
     </Menu>
   );
 
@@ -42,25 +54,11 @@ export const Header = () => {
     >
       <div className="container ">
         <a className="navbar-brand" href={"index"}>
-          Logo
+          <img src={Logo} alt="logo" />
         </a>
         <div>
-          <Dropdown overlay={menu} trigger={["click"]}>
-            <button
-              className="ant-dropdown-link"
-              onClick={(e) => e.preventDefault()}
-            >
-              Language
-            </button>
-          </Dropdown>
-          <Dropdown overlay={menu} trigger={["click"]}>
-            <button
-              className="ant-dropdown-link"
-              onClick={(e) => e.preventDefault()}
-            >
-              User
-            </button>
-          </Dropdown>
+          <DropdownCustom overlay={LanguageMenu} title="Language" />
+          <DropdownCustom overlay={UserMenu} title="User" />
         </div>
       </div>
     </nav>

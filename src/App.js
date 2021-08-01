@@ -3,6 +3,7 @@ import "./assests/sass/style.scss";
 
 import { Header } from "./sections/header/";
 import { Hero } from "./sections/hero/";
+import { ItemSlide } from "./sections/item-slide";
 
 import Icon from "./utils/icomoon";
 
@@ -12,7 +13,7 @@ class App extends React.Component {
       <Fragment>
         <Header />
         <Hero />
-        <Icon icon="music" size={20} color="orange" />
+        <ItemSlide />
       </Fragment>
     );
   }

@@ -1,0 +1,20 @@
+@use "../../assests/sass/theme" as theme;
+
+.ant-dropdown {
+  .ant-dropdown-menu {
+    border-radius: theme.$borderRadius;
+
+    .ant-dropdown-menu-item {
+      &:first-child {
+        &:hover {
+          border-radius: theme.$borderRadius theme.$borderRadius 0 0;
+        }
+      }
+      &:last-child {
+        &:hover {
+          border-radius: 0 0 theme.$borderRadius theme.$borderRadius;
+        }
+      }
+    }
+  }
+}

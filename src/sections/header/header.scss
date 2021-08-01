@@ -1,10 +1,18 @@
 @use "../../assests/sass/theme" as theme;
 
-.navbar {
-  padding: 1.5rem 0;
-  transition: background-color ease-in-out 0.3s;
+nav {
+  &.navbar {
+    padding: 1.5rem 0;
+    transition: background-color ease-in-out 0.3s;
 
-  &.scrolled {
-    background-color: theme.$whiteColor;
+    &.scrolled {
+      background-color: theme.$whiteColor;
+    }
+  }
+
+  .navbar-brand {
+    img {
+      width: 200px;
+    }
   }
 }
