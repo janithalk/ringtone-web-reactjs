@@ -14,7 +14,7 @@ class Slide extends React.Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
-              <ButtonCustom title="View More" />
+              <ButtonCustom type="secondary">View More</ButtonCustom>
             </div>
             <img src={this.props.image} alt="Slide" />
           </div>

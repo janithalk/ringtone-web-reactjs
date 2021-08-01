@@ -27,5 +27,12 @@ body {
 }
 
 h1 {
-  color: theme.$primaryColor;
+  font-family: theme.$robotoFont;
+  font-size: 3.75rem; /* 60px */
+  margin-bottom: 0.375rem; /* 6px */
+}
+
+p {
+  font-size: 1rem; /* 18px */
+  color: theme.$textColor;
 }

@@ -1,5 +1,34 @@
+@use "../../assests/sass/theme" as theme;
+
 .ant-btn {
   border-radius: 2.25rem; /* 36px */
   padding: 0.625rem 1.5rem; /* 10px , 24px */
   height: unset;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+
+  &.ant-btn-secondary {
+    border: 2px solid theme.$primaryColor;
+    color: theme.$primaryColor;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      color: theme.$secondaryColor;
+      background: rgb(theme.$whiteColor, 35%);
+      border-color: theme.$secondaryColor;
+    }
+
+    &:active {
+      color: theme.$primaryColor;
+      background-color: transparent;
+      border-color: theme.$primaryColor;
+    }
+  }
+
+  &.ant-btn-ghost {
+    border: 2px solid theme.$greyDCDCDC;
+    color: theme.$primaryColor;
+    background-color: theme.$whiteColor;
+  }
 }

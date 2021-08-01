@@ -21,7 +21,13 @@ export const DropdownCustom = (props) => {
 
   return (
     <Dropdown overlay={props.overlay} trigger={["click"]}>
-      <ButtonCustom onClick={(e) => e.preventDefault()} />
+      <ButtonCustom
+        onClick={(e) => e.preventDefault()}
+        btnClass={props.btnClass}
+        type="ghost"
+      >
+        {props.children}
+      </ButtonCustom>
     </Dropdown>
   );
 };

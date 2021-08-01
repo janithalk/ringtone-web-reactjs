@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import { DropdownCustom } from "../../components/dropdown";
-import { Menu } from "antd";
-
 import "./header.scss";
 import Logo from "../../assests/images/logo.png";
+import { UserMenu } from "./UserMenu";
+import { LanguageMenu } from "./LanguageMenu";
 
 export const Header = () => {
   const [navBackground, setNavBackground] = useState(false);
@@ -24,41 +23,19 @@ export const Header = () => {
     };
   }, []);
 
-  /* Languagae Menu List */
-  const LanguageMenu = (
-    <Menu>
-      <Menu.Item key="0">English</Menu.Item>
-      <Menu.Divider />
-      <Menu.Item key="1">Tamil</Menu.Item>
-      <Menu.Divider />
-      <Menu.Item key="3">Sinhala</Menu.Item>
-    </Menu>
-  );
-
-  /* Languagae Menu List */
-  const UserMenu = (
-    <Menu>
-      <Menu.Item key="0">My Tunes</Menu.Item>
-      <Menu.Divider />
-      <Menu.Item key="1">Profile Settings</Menu.Item>
-      <Menu.Divider />
-      <Menu.Item key="3">Logout</Menu.Item>
-    </Menu>
-  );
-
   return (
     <nav
       className={
         navBackground ? "navbar fixed-top scrolled" : "navbar fixed-top"
       }
     >
-      <div className="container ">
+      <div className="container">
         <a className="navbar-brand" href={"index"}>
           <img src={Logo} alt="logo" />
         </a>
-        <div>
-          <DropdownCustom overlay={LanguageMenu} title="Language" />
-          <DropdownCustom overlay={UserMenu} title="User" />
+        <div className="d-flex align-items-center">
+          <LanguageMenu />
+          <UserMenu />
         </div>
       </div>
     </nav>

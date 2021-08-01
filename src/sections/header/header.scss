@@ -16,3 +16,16 @@ nav {
     }
   }
 }
+
+.avatar {
+  padding: unset !important;
+  border: unset !important;
+
+  img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
