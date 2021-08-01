@@ -1,21 +1,34 @@
 import React from "react";
 import { Select } from "antd";
-
-const { Option } = Select;
+import "./select.scss";
 
 function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-export const SelectCustom = () => {
+export const SelectCustom = (props) => {
   return (
-    <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
-      <Option value="jack">Jack</Option>
-      <Option value="lucy">Lucy</Option>
-      <Option value="disabled" disabled>
-        Disabled
-      </Option>
-      <Option value="Yiminghe">yiminghe</Option>
+    <Select
+      placeholder={props.placeholder}
+      // style={{ width: 120 }}
+      onChange={handleChange}
+      className="select-input"
+    >
+      {props.children}
     </Select>
   );
 };
+
+/* Select Comp
+const { Option } = Select;
+
+<SelectCustom>
+  <Option value="jack">Jack</Option>
+  <Option value="lucy">Lucy</Option>
+  <Option value="disabled" disabled>
+    Disabled
+  </Option>
+  <Option value="Yiminghe">yiminghe</Option>
+</SelectCustom>
+
+*/

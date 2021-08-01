@@ -1,0 +1,61 @@
+@use "../../assests/sass/theme" as theme;
+
+.searchbar-wrap {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  @media (max-width: 767px) {
+    bottom: -96px;
+  }
+  @media (min-width: 768px) {
+    bottom: -6px;
+  }
+  .searchbar {
+    background-color: theme.$whiteColor;
+    padding: 12px;
+    border-radius: 45px;
+    box-shadow: 0 0 16px rgb(theme.$blackColor, 16%);
+
+    .search-filed {
+      @media (max-width: 576px) {
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+
+        .select-input {
+          &.ant-select {
+            width: 100%;
+          }
+        }
+
+        .ant-btn {
+          width: 100%;
+        }
+      }
+      @media (min-width: 768px) {
+        .select-input {
+          &.ant-select {
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-item {
+  font-size: 1rem;
+  color: theme.$textColor;
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: theme.$textColor;
+    margin: 0 10px;
+  }
+  .artist {
+    color: theme.$greyA1A1A1;
+  }
+}

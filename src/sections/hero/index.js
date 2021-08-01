@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "./hero.scss";
 import Icon from "../../utils/icomoon";
 import Slide from "./Slide";
+import { SearchBar } from "../searchbar";
 
 import SlideImg1 from "../../assests/images/slide-1.png";
 import SlideImg2 from "../../assests/images/slide-2.png";
@@ -43,6 +44,8 @@ export const Hero = () => {
           ></path>
         </svg>
       </div>
+
+      <SearchBar />
     </section>
   );
 };

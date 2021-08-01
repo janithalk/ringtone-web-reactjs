@@ -71,7 +71,12 @@
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 8%;
+  @media (max-width: 576px) {
+    width: unset;
+  }
+  @media (min-width: 768px) {
+    width: 8%;
+  }
 
   .hero-arrow-wrap {
     border: 0.188rem solid theme.$primaryColor;

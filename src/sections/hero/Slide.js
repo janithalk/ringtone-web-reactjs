@@ -16,7 +16,11 @@ class Slide extends React.Component {
               </p>
               <ButtonCustom type="secondary">View More</ButtonCustom>
             </div>
-            <img src={this.props.image} alt="Slide" />
+            <img
+              src={this.props.image}
+              alt="Slide"
+              className="d-none d-sm-block"
+            />
           </div>
         </div>
       </div>

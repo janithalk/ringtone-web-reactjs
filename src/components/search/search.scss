@@ -1,0 +1,24 @@
+@use "../../assests/sass/theme" as theme;
+
+.search-input {
+  .ant-select-selector {
+    width: 450px !important;
+    @media (max-width: 767px) {
+      width: 250px !important;
+    }
+  }
+
+  &.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: unset;
+  }
+
+  &.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+    .ant-select-selector {
+    border-color: unset;
+    box-shadow: unset;
+  }
+}
+
+.ant-select {
+  font-size: 1rem;
+}

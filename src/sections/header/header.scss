@@ -16,7 +16,12 @@ nav {
     border-radius: 6px;
 
     img {
-      width: 200px;
+      @media (max-width: 767px) {
+        height: 45px !important;
+      }
+      @media (min-width: 768px) {
+        width: 250px !important;
+      }
     }
   }
 }
