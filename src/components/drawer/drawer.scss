@@ -1,0 +1,11 @@
+@use "../../assests/sass/theme" as theme;
+
+.ant-drawer {
+  .ant-drawer-close {
+    color: theme.$primaryColor;
+    border: 2px solid theme.$primaryColor;
+    border-radius: 50%;
+    padding: 0.313rem; /* 5px */
+    top: 5px;
+  }
+}

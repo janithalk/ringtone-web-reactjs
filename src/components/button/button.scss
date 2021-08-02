@@ -55,4 +55,14 @@
       border-color: theme.$secondaryColor;
     }
   }
+
+  &.control-btn {
+    padding: 15px 12px 15px 18px;
+    border-radius: 50%;
+
+    &.active {
+      background-color: theme.$greenColor;
+      border: 2px solid theme.$greenColor;
+    }
+  }
 }

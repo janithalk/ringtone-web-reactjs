@@ -4,7 +4,7 @@ import { Menu } from "antd";
 import { MenuItem } from "../../components/menu/MenuItem";
 import { DrawerCustom } from "../../components/drawer";
 import Icon from "../../utils/icomoon";
-import SongBar from "../songbar";
+import { SongBar } from "../songbar";
 
 export const ItemCard = (props) => {
   const menu = (

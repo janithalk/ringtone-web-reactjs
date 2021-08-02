@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Drawer } from "antd";
-import { ButtonCustom } from "../button";
-import Icon from "../../utils/icomoon";
+import { ControlButton } from "../button/ControlButton";
+import "./drawer.scss";
 
 export const DrawerCustom = (props) => {
   const [visible, setVisible] = useState(false);
@@ -14,16 +14,14 @@ export const DrawerCustom = (props) => {
 
   return (
     <Fragment>
-      <ButtonCustom type="primary" onClick={showDrawer} btnClass="control-btn">
-        <Icon icon="play" className="icon" />
-      </ButtonCustom>
+      <ControlButton type="play" onClick={showDrawer} />
       <Drawer
         placement="bottom"
         closable={true}
         onClose={onClose}
         visible={visible}
         mask={false}
-        height={100}
+        height={130}
       >
         {props.children}
       </Drawer>

@@ -1,0 +1,25 @@
+@use "../../assests/sass/theme" as theme;
+
+.song-bar {
+  .album-img {
+    width: 80px;
+    height: 80px;
+    border-radius: theme.$borderRadius;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  P {
+    margin-bottom: unset;
+  }
+
+  .control-btn {
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  .track-btn {
+    border: unset;
+    padding: 11px 15px;
+  }
+}

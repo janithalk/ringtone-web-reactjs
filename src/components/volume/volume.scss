@@ -1,0 +1,19 @@
+@use "../../assests/sass/theme" as theme;
+
+.volume-bar {
+  .volume-icon {
+    color: theme.$primaryColor;
+  }
+
+  .ant-slider {
+    width: 100px;
+
+    .ant-slider-handle {
+      border: 2px solid theme.$primaryColor;
+    }
+
+    .ant-slider-track {
+      background-color: theme.$primaryColor;
+    }
+  }
+}
