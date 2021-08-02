@@ -73,11 +73,14 @@
   @media (min-width: 768px) {
     width: 8%;
   }
+  @media (min-width: 1400px) {
+    width: 12%;
+  }
 
   .hero-arrow-wrap {
     border: 0.188rem solid theme.$primaryColor;
     border-radius: 50%;
-    padding: 12px 13px;
+    padding: 8px 9px;
     transition: background-color ease-in-out 0.3s;
 
     &:hover {

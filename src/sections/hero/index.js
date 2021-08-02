@@ -10,12 +10,12 @@ import SlideImg2 from "../../assests/images/slide-2.png";
 
 const ArrowLeft = (
   <div className="hero-arrow-wrap">
-    <Icon icon="arrow-left" className="arrow-icon" />
+    <Icon icon="arrow-left" className="arrow-icon" size={20} />
   </div>
 );
 const ArrowRight = (
   <div className="hero-arrow-wrap">
-    <Icon icon="arrow-right" className="arrow-icon" />
+    <Icon icon="arrow-right" className="arrow-icon" size={20} />
   </div>
 );
 
