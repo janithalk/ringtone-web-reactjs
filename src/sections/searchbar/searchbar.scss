@@ -14,8 +14,13 @@
   .searchbar {
     background-color: theme.$whiteColor;
     padding: 12px;
-    border-radius: 45px;
     box-shadow: 0 0 16px rgb(theme.$blackColor, 16%);
+    @media (max-width: 767px) {
+      border-radius: 25px;
+    }
+    @media (min-width: 768px) {
+      border-radius: 45px;
+    }
 
     .search-filed {
       @media (max-width: 576px) {

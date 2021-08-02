@@ -5,8 +5,6 @@ import { Header } from "./sections/header/";
 import { Hero } from "./sections/hero/";
 import { ItemSlide } from "./sections/item-slide";
 
-import Icon from "./utils/icomoon";
-
 class App extends React.Component {
   render() {
     return (
