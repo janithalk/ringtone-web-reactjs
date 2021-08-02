@@ -55,8 +55,8 @@ body {
 
 @include text-style(
   "h3",
-  theme.$defaultFont,
-  1.75,
+  theme.$robotoFont,
+  2,
   700,
   theme.$primaryColor,
   0.375rem
