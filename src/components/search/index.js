@@ -19,19 +19,16 @@ function onSearch(val) {
 }
 
 export const SearchCustom = (props) => {
+  const { Option } = Select;
   return (
     <Select
       showSearch
-      //style={{ width: 200 }}
       placeholder="Find song album or artist"
       optionFilterProp="children"
       onChange={onChange}
       onFocus={onFocus}
       onBlur={onBlur}
       onSearch={onSearch}
-      filterOption={(input, option) =>
-        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-      }
       showArrow={false}
       className="search-input"
     >
