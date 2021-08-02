@@ -7,13 +7,14 @@
   @media (min-width: 768px) {
     margin-top: 5rem; /* 80px */
   }
+
   .top-section {
     margin-bottom: 1.688rem; /* 27px */
   }
 
   .card {
     border: 1px solid rgb(theme.$greyDCDCDC, 50%);
-    border-radius: 16px;
+    border-radius: theme.$borderRadius;
     box-shadow: 0 0 16px rgb(theme.$blackColor, 16%);
 
     .control {
@@ -29,7 +30,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        border-radius: 16px 16px 0 0;
+        border-radius: theme.$borderRadius theme.$borderRadius 0 0;
         object-fit: cover;
         object-position: center;
       }

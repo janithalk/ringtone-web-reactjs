@@ -18,34 +18,35 @@ export const ItemSlide = (props) => {
           <h2>{props.title}</h2>
           <ButtonCustom type="secondary">See all</ButtonCustom>
         </div>
+
+        <Slider>
+          <ItemCard
+            Img={AlbumImage1}
+            song="Solar Power"
+            artist="Lorde"
+            price="200"
+          />
+          <ItemCard
+            Img={AlbumImage2}
+            song="Kiss Me More"
+            artist="Doja Cat, ft. SZA & Unicefq DJ"
+            price="580"
+          />
+          <ItemCard
+            Img={AlbumImage3}
+            song="It’s Alright (Baby’s Coming Back)"
+            artist="Blinker the Star"
+            price="300"
+          />
+          <ItemCard Img={AlbumImage4} song="Butter" artist="BTS" price="500" />
+          <ItemCard
+            Img={AlbumImage5}
+            song="Atlantic"
+            artist="The Weather Station"
+            price="450"
+          />
+        </Slider>
       </div>
-      <Slider>
-        <ItemCard
-          Img={AlbumImage1}
-          song="Solar Power"
-          artist="Lorde"
-          price="200"
-        />
-        <ItemCard
-          Img={AlbumImage2}
-          song="Kiss Me More"
-          artist="Doja Cat, ft. SZA & Unicefq DJ"
-          price="580"
-        />
-        <ItemCard
-          Img={AlbumImage3}
-          song="It’s Alright (Baby’s Coming Back)"
-          artist="Blinker the Star"
-          price="300"
-        />
-        <ItemCard Img={AlbumImage4} song="Butter" artist="BTS" price="500" />
-        <ItemCard
-          Img={AlbumImage5}
-          song="Atlantic"
-          artist="The Weather Station"
-          price="450"
-        />
-      </Slider>
     </section>
   );
 };

@@ -19,7 +19,6 @@ function onSearch(val) {
 }
 
 export const SearchCustom = (props) => {
-  const { Option } = Select;
   return (
     <Select
       showSearch

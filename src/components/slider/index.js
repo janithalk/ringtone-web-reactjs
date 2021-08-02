@@ -46,7 +46,7 @@ const options = {
 class Slider extends React.Component {
   render() {
     return (
-      <div className="slider-owl container">
+      <div className="slider-owl">
         <OwlCarousel {...options}>{this.props.children}</OwlCarousel>
       </div>
     );

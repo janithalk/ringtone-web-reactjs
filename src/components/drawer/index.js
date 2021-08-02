@@ -23,6 +23,7 @@ export const DrawerCustom = (props) => {
         onClose={onClose}
         visible={visible}
         mask={false}
+        height={100}
       >
         {props.children}
       </Drawer>

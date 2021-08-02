@@ -1,10 +1,10 @@
 import React from "react";
-import { ButtonCustom } from "../../components/button";
 import { DropdownCustom } from "../../components/dropdown/";
 import { Menu } from "antd";
 import { MenuItem } from "../../components/menu/MenuItem";
 import { DrawerCustom } from "../../components/drawer";
 import Icon from "../../utils/icomoon";
+import SongBar from "../songbar";
 
 export const ItemCard = (props) => {
   const menu = (
@@ -30,10 +30,12 @@ export const ItemCard = (props) => {
     <div class="item card">
       <div className="control">
         <img src={props.Img} alt="card" />
-        <DrawerCustom />
+        <DrawerCustom>
+          <SongBar />
+        </DrawerCustom>
       </div>
       <div className="detail">
-        <h3>{props.song}</h3>
+        <h4>{props.song}</h4>
         <p className="text-truncate">{props.artist}</p>
       </div>
       <div className="extra d-flex justify-content-between align-items-center">
