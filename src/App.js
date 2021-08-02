@@ -11,7 +11,8 @@ class App extends React.Component {
       <Fragment>
         <Header />
         <Hero />
-        <ItemSlide />
+        <ItemSlide title="Top Tones" />
+        <ItemSlide title="Latest Release" />
       </Fragment>
     );
   }

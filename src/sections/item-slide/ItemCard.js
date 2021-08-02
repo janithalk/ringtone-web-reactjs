@@ -40,7 +40,11 @@ export const ItemCard = (props) => {
         <span>
           <strong>Rs {props.price} /</strong> month
         </span>
-        <DropdownCustom overlay={menu} btnClass="menu-icon">
+        <DropdownCustom
+          overlay={menu}
+          btnClass="menu-icon"
+          placement="topRight"
+        >
           <Icon icon="verticle-menu" size={20} />
         </DropdownCustom>
       </div>

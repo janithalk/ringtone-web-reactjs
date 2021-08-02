@@ -22,7 +22,11 @@ export const DropdownCustom = (props) => {
   */
 
   return (
-    <Dropdown overlay={props.overlay} trigger={["click"]}>
+    <Dropdown
+      overlay={props.overlay}
+      placement={props.placement}
+      trigger={["click"]}
+    >
       <ButtonCustom
         onClick={(e) => e.preventDefault()}
         btnClass={props.btnClass}

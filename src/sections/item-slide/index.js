@@ -4,15 +4,18 @@ import { ButtonCustom } from "../../components/button";
 import { ItemCard } from "./ItemCard";
 import "./item-slide.scss";
 
-import AlbumImage1 from "../../assests/images/song-1.png";
-import AlbumImage2 from "../../assests/images/song-2.png";
+import AlbumImage1 from "../../assests/images/song-1.jpg";
+import AlbumImage2 from "../../assests/images/song-2.jpg";
+import AlbumImage3 from "../../assests/images/song-3.jpg";
+import AlbumImage4 from "../../assests/images/song-4.jpg";
+import AlbumImage5 from "../../assests/images/song-5.jpg";
 
-export const ItemSlide = () => {
+export const ItemSlide = (props) => {
   return (
     <section className="item-slide">
       <div className="container">
         <div className="top-section d-flex align-items-center justify-content-between">
-          <h2>Top Tones</h2>
+          <h2>{props.title}</h2>
           <ButtonCustom type="secondary">See all</ButtonCustom>
         </div>
       </div>
@@ -21,26 +24,26 @@ export const ItemSlide = () => {
           Img={AlbumImage1}
           song="Solar Power"
           artist="Lorde"
-          price=""
+          price="200"
         />
         <ItemCard
           Img={AlbumImage2}
           song="Kiss Me More"
           artist="Doja Cat, ft. SZA & Unicefq DJ"
-          price=""
+          price="580"
         />
         <ItemCard
-          Img={AlbumImage1}
+          Img={AlbumImage3}
           song="It’s Alright (Baby’s Coming Back)"
           artist="Blinker the Star"
-          price=""
+          price="300"
         />
-        <ItemCard Img={AlbumImage2} song="Butter" artist="" price="BTS" />
+        <ItemCard Img={AlbumImage4} song="Butter" artist="BTS" price="500" />
         <ItemCard
-          Img={AlbumImage1}
+          Img={AlbumImage5}
           song="Atlantic"
           artist="The Weather Station"
-          price=""
+          price="450"
         />
       </Slider>
     </section>
