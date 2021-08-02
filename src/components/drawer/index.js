@@ -14,8 +14,8 @@ export const DrawerCustom = (props) => {
 
   return (
     <Fragment>
-      <ButtonCustom type="primary" onClick={showDrawer}>
-        <Icon icon="play" />
+      <ButtonCustom type="primary" onClick={showDrawer} btnClass="control-btn">
+        <Icon icon="play" className="icon" />
       </ButtonCustom>
       <Drawer
         placement="bottom"

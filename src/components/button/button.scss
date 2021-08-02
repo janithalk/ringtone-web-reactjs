@@ -48,5 +48,11 @@
     border: 2px solid theme.$greyDCDCDC;
     color: theme.$primaryColor;
     background-color: theme.$whiteColor;
+    &:hover,
+    &:focus {
+      color: theme.$secondaryColor;
+      background: rgb(theme.$whiteColor, 35%);
+      border-color: theme.$secondaryColor;
+    }
   }
 }
