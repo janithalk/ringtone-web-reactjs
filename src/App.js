@@ -3,8 +3,10 @@ import "./assests/sass/style.scss";
 
 import { Header } from "./sections/header/";
 import { Hero } from "./sections/hero/";
-import { ItemSlide } from "./sections/item-slide/";
+import TopTones from "./sections/item-slide/TopTones";
+import LatestTones from "./sections/item-slide/LatestTones";
 import Promotion from "./sections/promotion/";
+import Footer from "./sections/footer/";
 
 class App extends React.Component {
   render() {
@@ -12,9 +14,10 @@ class App extends React.Component {
       <Fragment>
         <Header />
         <Hero />
-        <ItemSlide title="Top Tones" />
-        <ItemSlide title="Latest Release" />
+        <TopTones />
+        <LatestTones />
         <Promotion />
+        <Footer />
       </Fragment>
     );
   }

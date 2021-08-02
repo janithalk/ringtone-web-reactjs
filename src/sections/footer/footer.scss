@@ -1,0 +1,11 @@
+@use "../../assests/sass/theme" as theme;
+
+footer {
+  background-color: theme.$footerColor;
+  color: theme.$blueTextColor;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  padding: 1.875rem;
+  text-align: center;
+}

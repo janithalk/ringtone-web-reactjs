@@ -1,13 +1,24 @@
 @use "../../assests/sass/theme" as theme;
 
-.item-slide {
+.top-tones {
   @media (max-width: 767px) {
     margin-top: 9.375rem; /* 150px */
   }
   @media (min-width: 768px) {
     margin-top: 5rem; /* 80px */
   }
+}
 
+.latest-tones {
+  @media (max-width: 767px) {
+    margin-top: 3rem; /* 48px */
+  }
+  @media (min-width: 768px) {
+    margin-top: 3rem; /* 48px */
+  }
+}
+
+.item-slide {
   .top-section {
     margin-bottom: 1.688rem; /* 27px */
   }
@@ -40,17 +51,12 @@
         right: 10px;
         bottom: -20px;
         border: 6px solid theme.$whiteColor;
-
-        .icon {
-          // width: 30px !important;
-          // height: 30px !important;
-        }
       }
     }
 
     .detail {
       padding: 30px;
-      height: 92px;
+      height: 105px;
     }
 
     .extra {

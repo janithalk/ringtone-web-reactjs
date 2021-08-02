@@ -24,6 +24,22 @@ nav {
       }
     }
   }
+
+  .menu-item-wrap {
+    @media (max-width: 767px) {
+      .icon-img {
+        margin-right: 0 !important;
+      }
+      span {
+        display: none;
+      }
+    }
+    @media (min-width: 768px) {
+      span {
+        display: block;
+      }
+    }
+  }
 }
 
 .avatar {

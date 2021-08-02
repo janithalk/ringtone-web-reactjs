@@ -15,7 +15,7 @@ export const MenuItem = (props) => {
   return (
     <div className="menu-item-wrap d-flex align-items-center">
       {IconCustom.current}
-      {props.title}
+      <span>{props.title}</span>
     </div>
   );
 };

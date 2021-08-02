@@ -12,7 +12,7 @@ import AlbumImage5 from "../../assests/images/song-5.jpg";
 
 export const ItemSlide = (props) => {
   return (
-    <section className="item-slide">
+    <div className="item-slide">
       <div className="container">
         <div className="top-section d-flex align-items-center justify-content-between">
           <h2>{props.title}</h2>
@@ -47,6 +47,6 @@ export const ItemSlide = (props) => {
           />
         </Slider>
       </div>
-    </section>
+    </div>
   );
 };

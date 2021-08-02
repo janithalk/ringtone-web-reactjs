@@ -31,7 +31,7 @@ const options = {
       margin: 30,
     },
     992: {
-      items: 4,
+      items: 3,
       stagePadding: 50,
       margin: 30,
     },
