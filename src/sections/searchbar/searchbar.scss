@@ -19,7 +19,7 @@
 
     .search-filed {
       @media (max-width: 576px) {
-        width: 100%;
+        width: calc(100vw - 73px);
         &:not(:last-child) {
           margin-bottom: 25px;
         }

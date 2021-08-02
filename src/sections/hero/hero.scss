@@ -105,6 +105,12 @@
 
 .slide-wrap {
   height: 580px;
+  @media (max-width: 576px) {
+    padding: 0 50px; /* Space from carousel controles */
+  }
+  @media (min-width: 768px) {
+    padding: 0 35px; /* Space from carousel controles */
+  }
   @media (min-width: 1200px) {
     padding: 0 100px; /* Space from carousel controles */
   }

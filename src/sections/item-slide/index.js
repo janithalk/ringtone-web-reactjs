@@ -13,7 +13,13 @@ export const ItemSlide = () => {
   return (
     <div>
       <div class="container-fluid">
-        <OwlCarousel items={3} className="owl-theme" loop nav margin={8}>
+        <OwlCarousel
+          items={3}
+          className="owl-theme"
+          loop
+          margin={8}
+          nav={false}
+        >
           <div>
             <img className="img" src={Slide1} alt="" />
           </div>

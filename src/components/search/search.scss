@@ -1,10 +1,11 @@
 @use "../../assests/sass/theme" as theme;
 
 .search-input {
+  &.ant-select,
   .ant-select-selector {
     width: 450px !important;
     @media (max-width: 767px) {
-      width: 250px !important;
+      width: 100% !important;
     }
   }
 
