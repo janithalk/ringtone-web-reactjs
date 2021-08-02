@@ -26,11 +26,33 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-  font-family: theme.$robotoFont;
-  font-size: 3.75rem; /* 60px */
-  margin-bottom: 0.375rem; /* 6px */
+@mixin text-style($name, $family, $size, $weight, $color, $margin-bottom) {
+  #{$name} {
+    font-family: $family;
+    font-size: #{$size}rem;
+    font-weight: $weight;
+    color: $color;
+    margin-bottom: $margin-bottom;
+  }
 }
+
+@include text-style(
+  "h1",
+  theme.$robotoFont,
+  3.75,
+  800,
+  theme.$primaryColor,
+  0.375rem
+);
+
+@include text-style(
+  "h2",
+  theme.$robotoFont,
+  2.5,
+  600,
+  theme.$primaryColor,
+  0.375rem
+);
 
 p {
   font-size: 1rem; /* 18px */

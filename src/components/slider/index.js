@@ -47,39 +47,18 @@ class Slider extends React.Component {
   render() {
     return (
       <div className="slider-owl container">
-        <OwlCarousel {...options}>
-          <div>
-            <img className="img" src={Slide1} alt="" />
-            <h4>1</h4>
-          </div>
-          <div>
-            <img className="img" src={Slide2} alt="" />
-            <h4>2</h4>
-          </div>
-          <div>
-            <img className="img" src={Slide3} alt="" />
-            <h4>3</h4>
-          </div>
-          <div>
-            <img className="img" src={Slide4} alt="" />
-            <h4>4</h4>
-          </div>
-          <div>
-            <img className="img" src={Slide5} alt="" />
-          </div>
-          <div>
-            <img className="img" src={Slide1} alt="" />
-          </div>
-          <div>
-            <img className="img" src={Slide2} alt="" />
-          </div>
-          <div>
-            <img className="img" src={Slide3} alt="" />
-          </div>
-        </OwlCarousel>
+        <OwlCarousel {...options}>{this.props.children}</OwlCarousel>
       </div>
     );
   }
 }
 
 export default Slider;
+
+/* Item Sample
+
+<div class='item'>
+    <h4>This is Item</h4>
+</div>
+
+*/

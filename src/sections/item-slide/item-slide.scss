@@ -1,0 +1,13 @@
+@use "../../assests/sass/theme" as theme;
+
+.item-slide {
+  margin-top: 5rem; /* 80px */
+  .top-section {
+    margin-bottom: 1.688rem; /* 27px */
+  }
+
+  .card {
+    border: 1px solid rgb(theme.$greyDCDCDC, 50%);
+    box-shadow: 0 0 16px rgb(theme.$blackColor, 16%);
+  }
+}

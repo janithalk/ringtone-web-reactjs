@@ -1,3 +1,5 @@
+@use "../../assests/sass/theme" as theme;
+
 .slider-owl {
   .owl-stage-outer {
     @media (max-width: 1399.98px) {
@@ -15,12 +17,39 @@
   }
 
   .owl-carousel.owl-drag .owl-item {
+    padding: 13px 0; /* Space for dropshadow for inner box */
     &:first-child {
       @media (max-width: 767.98px) {
         margin-left: 0;
       }
       @media (min-width: 768px) {
         margin-left: -50px;
+      }
+    }
+  }
+
+  .owl-theme {
+    .owl-dots {
+      .owl-dot {
+        span {
+          width: 14px;
+          height: 14px;
+          background: theme.$greenColor;
+          transition: width ease-in-out 0.3s;
+        }
+
+        &.active {
+          span {
+            width: 50px;
+          }
+        }
+
+        &.active,
+        &:hover {
+          span {
+            background: theme.$greenHoverColor;
+          }
+        }
       }
     }
   }
